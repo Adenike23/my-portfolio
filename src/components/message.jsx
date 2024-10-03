@@ -51,10 +51,10 @@ export default function Message() {
     }
 
     return (
-        <div className="w-[90%] md:w-[30%] mx-auto mt-[5rem]">
+        <div className="w-[90%] md:w-[30%] mx-auto my-[5rem]">
             <ToastContainer position="top-center"/>
             <form onSubmit={handleSendMail}>
-                <div className="">
+                <div>
                     <label htmlFor="" className="block text-gray-700 font-medium mb-2">Name</label>
                     <input 
                     name="name"

@@ -19,7 +19,7 @@ export default function Projects() {
                         <button className="rounded-2xl bg-black py-3 px-4 text-white md:mt-[6rem] mr-[1rem]"><a href="https://github.com/Adenike23/fashionTech" target="_blank" className="flex items-center gap-1"><FaGithub /> Github</a></button>
                         <button className="rounded-2xl bg-black py-3 px-4 text-white md:mt-[6rem]"><a href="https://adenike-fashiontech.netlify.app" target="_blank" className="flex items-center gap-1"><LiaEyeSolid /> Live</a></button>
                     </div>
-                    <div style={{ overflow: 'hidden', width: '400px', height: '300px' }}>
+                    <div style={{ overflow: 'hidden', width: '420px', height: '300px' }}>
                     <motion.img
                         src={fashionTech} 
                         alt="Scrolling Image"
@@ -27,13 +27,13 @@ export default function Projects() {
                         whileHover={{ y: -3300 }} // Move the image upwards on hover
                         transition={{ duration: 5, ease: "easeInOut" }} // Smooth scrolling effect
                         style={{ height: 'auto', objectFit: 'cover', cursor: 'pointer', borderRadius: '25px' }}
-                        className="mt-3 md:mt-0 w-[83%] md:w-[100%] mx-auto"
+                        className="mt-3 md:mt-0 w-[83%] md:w-[100%]"
                         />
                     </div>
                     </div>
 
                 <div className="flex flex-col-reverse md:flex-row justify-around w-[90%] mx-auto my-[4rem] bg-zinc-300 p-3 rounded-2xl">
-                    <div style={{ overflow: 'hidden', width: '400px', height: '300px' }}>
+                    <div style={{ overflow: 'hidden', width: '420px', height: '300px' }}>
                     <motion.img
                         src={projectUniv} 
                         alt="Scrolling Image"
@@ -41,7 +41,7 @@ export default function Projects() {
                         whileHover={{ y: -1100 }} 
                         transition={{ duration: 5, ease: "easeInOut" }} 
                         style={{ height: 'auto', objectFit: 'cover', cursor: 'pointer', borderRadius: '25px' }}
-                        className="mt-3 md:mt-0 w-[82%] md:w-[100%] mx-auto"
+                        className="mt-3 md:mt-0 w-[82%] md:w-[100%]"
                         />
                     </div>
                     <div className="md:w-[40%] mb-3 md:mb-0">
@@ -57,7 +57,7 @@ export default function Projects() {
                         <button className="rounded-2xl bg-black py-2 px-4 text-white md:mt-[6rem mr-[1rem]"><a href="https://github.com/Adenike23/DevDose" className="flex items-center gap-1"><FaGithub /> Github </a></button>
                         <button className="rounded-2xl bg-black py-2 px-4 text-white md:mt-[6rem]"><a href="https://adenike-devdose.netlify.app/" className="flex items-center gap-1"><LiaEyeSolid /> Live </a></button>
                     </div>
-                    <div style={{ overflow: 'hidden', width: '400px', height: '300px' }}>
+                    <div style={{ overflow: 'hidden', width: '420px', height: '300px' }}>
                     <motion.img
                         src={devdose} 
                         alt="Scrolling Image"
@@ -65,13 +65,13 @@ export default function Projects() {
                         whileHover={{ y: -1400 }} 
                         transition={{ duration: 5, ease: "easeInOut" }} 
                         style={{ height: 'auto', objectFit: 'cover', cursor: 'pointer', borderRadius: '25px' }}
-                        className="mt-3 md:mt-0 w-[82%] md:w-[100%] mx-auto"
+                        className="mt-3 md:mt-0 w-[82%] md:w-[100%]"
                         />
                     </div>
                     </div>
 
                     <div className="flex flex-col-reverse md:flex-row justify-around w-[90%] mx-auto my-[4rem] bg-zinc-300 p-3 rounded-2xl py-3">
-                        <div style={{ overflow: 'hidden', width: '400px', height: '300px' }}>
+                        <div style={{ overflow: 'hidden', width: '420px', height: '300px' }}>
                     <motion.img
                         src={myPortfolio} 
                         alt="Scrolling Image"
@@ -79,7 +79,7 @@ export default function Projects() {
                         whileHover={{ y: -3300 }} 
                         transition={{ duration: 2, ease: "easeInOut" }} 
                         style={{ height: 'auto', objectFit: 'cover', cursor: 'pointer', borderRadius: '20px' }}
-                        className="mt-3 md:mt-0 w-[82%] md:w-[100%] mx-auto"
+                        className="mt-3 md:mt-0 w-[82%] md:w-[100%]"
                         />
                     </div>
                         <div className="md:w-[40%] mb-3 md:mb-0">

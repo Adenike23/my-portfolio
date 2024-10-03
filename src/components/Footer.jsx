@@ -34,9 +34,9 @@ export default function Footer() {
                 <div className="flex justify-between text-xs md:text-sm">
                     <p>&copy; 2024 all rights reserved.</p>
                     <div className="flex gap-4">
-                        <p><a href="https://github.com/adenike23" target="_blank">github</a></p>
-                        <p><a href="http://linkedin.com/in/adenike-adeofe-988661233" target="_blank">linkedin</a></p>
-                        <p><a href="https://twitter.com/Oluwaseyi_mo" target="_blank">twitter</a></p>
+                        <p><a href="https://github.com/adenike23" target="_blank" rel="noopener noreferrer">github</a></p>
+                        <p><a href="http://linkedin.com/in/adenike-adeofe-988661233" target="_blank" rel="noopener noreferrer">linkedin</a></p>
+                        <p><a href="https://twitter.com/Oluwaseyi_mo" target="_blank" rel="noopener noreferrer">twitter</a></p>
                     </div>
                 </div>
         </footer>

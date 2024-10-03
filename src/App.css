@@ -1,4 +1,11 @@
 body, html {
     overflow-x: hidden;
   }
-  
+.name{
+    display: block;
+    background-image: linear-gradient(to right, rgba(163, 167, 163, 0.902), rgb(61, 61, 61));
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}

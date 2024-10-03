@@ -17,17 +17,16 @@ export default function Navbar() {
                     >
                         <motion.path 
                         initial={{ opacity: 0, pathLength: 0 }}
-                        animate={{opacity: 1, pathLength: 1, transition: {duration: 2, ease: 'easeInOut'}}}
+                        animate={{opacity: 1, pathLength: 1, transition: {duration: 3, ease: 'easeInOut'}}}
                         
                         d="M 20 80 L 50 20 L 80 80" fill="none" stroke="black" stroke-width="5"/>
                         <motion.path d="M 35 55 L 65 55" fill="none" stroke="black" stroke-width="5"/>
                     </motion.svg>
                 </motion.div>
 
-                {/* <p><a href="mailto:adenikeadeofe@gmail.com?subject=Mail from Portfolio">adeofeadenike@gmail.com</a></p> */}
                 <motion.button whileHover={{textShadow: '0px 0px 8px rgb(211, 211, 211)', boxShadow: '0px 0px 8px rgb(255, 255, 255)', scale: 1.1, transition: {duration: 0.5} }} className="rounded-full bg-gray-100 py-2 px-4 font-medium"><a href="./Adenike-Adeofe_Resume.pdf" className="resume-link">Resume</a></motion.button>
             </div>
-            <motion.div className="flex gap-4" initial={{y: -250, opacity: 0}} animate={{ y: 1, opacity: 1 }} transition={{ duration: .5, ease: "easeInOut",mass: 0.4, damping: 4, type: 'spring', stiffness: 100 }}>
+            <motion.div className="flex gap-4" initial={{y: -250, opacity: 0}} animate={{ y: 1, opacity: 1 }} transition={{ duration: .5, ease: "easeInOut",mass: 0.4, damping: 7, type: 'spring', stiffness: 100 }}>
                 <p><a href="https://github.com/adenike23" target="_blank">github</a></p>
                 <p><a href="http://linkedin.com/in/adenike-adeofe-988661233" target="_blank">linkedin</a></p>
                 <p><a href="https://twitter.com/Oluwaseyi_mo" target="_blank">twitter</a></p>

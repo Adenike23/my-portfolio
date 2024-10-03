@@ -1,4 +1,6 @@
 import { useState } from "react"
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function Message() {
     const [values, setValues] = useState({
@@ -14,16 +16,43 @@ export default function Message() {
         }))
 
     }
-    function handleSendMail(e) {
-        e.preventDefault()
 
-        const fd = new FormData(e.target);
-        const data = Object.fromEntries(fd.entries())
-        console.log(data);        
+    const handleSendMail = async (e) => {
+        e.preventDefault()
+        
+        try {
+                const response = await fetch('https://getform.io/f/bxojkoma', {
+                    method: 'POST',
+                    headers: {
+                        'Accept': 'application/json',
+                        "Content-Type": "application/x-www-form-urlencoded"
+                      },
+                    body: new URLSearchParams(values).toString()
+                })
+
+                const data = await response.json()
+                console.log(data);                
+
+            if(response.ok) {
+                toast.success('Message sent succesfully!');
+                setValues({
+                    name: '',
+                    email: '',
+                    message: '',
+                })
+            } else {
+                toast.error('Failed to send your message. Please try again.');
+                
+            }
+        } catch (error) {
+            console.error('Error sending message.', error);
+        }
+           
     }
+
     return (
-        <div className="w-[30%] mx-auto mt-[5rem]">
-            {/* <h2>Send a message</h2> */}
+        <div className="w-[90%] md:w-[30%] mx-auto mt-[5rem]">
+            <ToastContainer position="top-center"/>
             <form onSubmit={handleSendMail}>
                 <div className="">
                     <label htmlFor="" className="block text-gray-700 font-medium mb-2">Name</label>

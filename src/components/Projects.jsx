@@ -1,9 +1,7 @@
 import devdose from "../assets/images/devdose.png";
 import fashionTech from "../assets/images/fashionTech.png";
-import countries from "../assets/images/countries.jpeg";
-import movies from "../assets/images/movies.jpeg";
 import projectUniv from "../assets/images/projectUniv.png";
-import swif from '../assets/images/swif.png'
+import myPortfolio from '../assets/images/my-portfolio.png'
 import { motion } from 'framer-motion';
 import { FaGithub } from "react-icons/fa";
 import { LiaEyeSolid } from "react-icons/lia";
@@ -29,7 +27,7 @@ export default function Projects() {
                         whileHover={{ y: -3300 }} // Move the image upwards on hover
                         transition={{ duration: 5, ease: "easeInOut" }} // Smooth scrolling effect
                         style={{ height: 'auto', objectFit: 'cover', cursor: 'pointer', borderRadius: '25px' }}
-                        className="mt-3 md:mt-0 w-[85%] md:w-[100%]"
+                        className="mt-3 md:mt-0 w-[83%] md:w-[100%]"
                         />
                     </div>
                     </div>
@@ -43,7 +41,7 @@ export default function Projects() {
                         whileHover={{ y: -1100 }} 
                         transition={{ duration: 5, ease: "easeInOut" }} 
                         style={{ height: 'auto', objectFit: 'cover', cursor: 'pointer', borderRadius: '25px' }}
-                        className="mt-3 md:mt-0 w-[85%] md:w-[100%]"
+                        className="mt-3 md:mt-0 w-[82%] md:w-[100%]"
                         />
                     </div>
                     <div className="md:w-[40%] mb-3 md:mb-0">
@@ -67,7 +65,7 @@ export default function Projects() {
                         whileHover={{ y: -1400 }} 
                         transition={{ duration: 5, ease: "easeInOut" }} 
                         style={{ height: 'auto', objectFit: 'cover', cursor: 'pointer', borderRadius: '25px' }}
-                        className="mt-3 md:mt-0 w-[85%] md:w-[100%]"
+                        className="mt-3 md:mt-0 w-[82%] md:w-[100%]"
                         />
                     </div>
                     </div>
@@ -75,19 +73,19 @@ export default function Projects() {
                     <div className="flex flex-col-reverse md:flex-row justify-around w-[90%] mx-auto my-[4rem] bg-zinc-300 p-3 rounded-2xl py-3">
                         <div style={{ overflow: 'hidden', width: '400px', height: '300px' }}>
                     <motion.img
-                        src={swif} 
+                        src={myPortfolio} 
                         alt="Scrolling Image"
                         initial={{ y: 0 }} 
-                        whileHover={{ y: -500 }} 
+                        whileHover={{ y: -3300 }} 
                         transition={{ duration: 2, ease: "easeInOut" }} 
-                        style={{ height: 'auto', objectFit: 'cover', cursor: 'pointer', borderRadius: '5%' }}
-                        className="mt-3 md:mt-0 w-[85%] md:w-[100%]"
+                        style={{ height: 'auto', objectFit: 'cover', cursor: 'pointer', borderRadius: '20px' }}
+                        className="mt-3 md:mt-0 w-[82%] md:w-[100%]"
                         />
                     </div>
                         <div className="md:w-[40%] mb-3 md:mb-0">
-                            <h2 className="text-2xl font-semibold">FashionTech</h2>
-                            <p className="py-2">Using API, I built a dynamic e-commerce platform that optimized the user experience by smoothly integrating a variety of functionalities.</p>
-                            <button className="rounded-2xl bg-black py-2 px-4 text-white md:mt-[6rem]">Github </button>
+                            <h2 className="text-2xl font-semibold">Adenike's Portfolio</h2>
+                            <p className="py-2">I used React to build my portfolio, using Framer Motion animations to make the experience more dynamic and improve user interaction. A dynamic picture slider powered by Slick Carousel is another feature of the project that enables visually appealing content displays. This portfolio serves as a display for my frontend development abilities.</p>
+                            <button className="rounded-2xl bg-black py-2 px-4 text-white md:mt-[4rem]"><a href="https://github.com/Adenike23/my-portfolio" className="flex items-center gap-1"><FaGithub />Github</a></button>
                         </div>
                     </div>
             </div>

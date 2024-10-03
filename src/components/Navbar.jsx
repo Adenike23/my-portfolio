@@ -24,7 +24,7 @@ export default function Navbar() {
                     </motion.svg>
                 </motion.div>
 
-                <motion.button whileHover={{textShadow: '0px 0px 8px rgb(211, 211, 211)', boxShadow: '0px 0px 8px rgb(255, 255, 255)', scale: 1.1, transition: {duration: 0.5} }} className="rounded-full bg-gray-100 py-2 px-4 font-medium"><a href="./Adenike-Adeofe_Resume.pdf" target="_blank" rel="noopener noreferrer" className="resume-link">Resume</a></motion.button>
+                <motion.button whileHover={{textShadow: '0px 0px 8px rgb(211, 211, 211)', boxShadow: '0px 0px 8px rgb(255, 255, 255)', scale: 1.1, transition: {duration: 0.5} }} className="rounded-full bg-gray-100 py-2 px-4 font-medium"><a href="./Adenike-Adeofe_Resume.pdf" className="resume-link">Resume</a></motion.button>
             </div>
             <motion.div className="flex gap-4" initial={{y: -250, opacity: 0}} animate={{ y: 1, opacity: 1 }} transition={{ duration: .5, ease: "easeInOut",mass: 0.4, damping: 7, type: 'spring', stiffness: 100 }}>
                 <p><a href="https://github.com/adenike23" target="_blank" rel="noopener noreferrer">github</a></p>

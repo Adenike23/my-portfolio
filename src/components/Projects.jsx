@@ -27,7 +27,7 @@ export default function Projects() {
                         whileHover={{ y: -3300 }} // Move the image upwards on hover
                         transition={{ duration: 5, ease: "easeInOut" }} // Smooth scrolling effect
                         style={{ height: 'auto', objectFit: 'cover', cursor: 'pointer', borderRadius: '25px' }}
-                        className="mt-3 md:mt-0 w-[83%] md:w-[100%]"
+                        className="mt-3 md:mt-0 w-[83%] md:w-[100%] mx-auto"
                         />
                     </div>
                     </div>
@@ -41,7 +41,7 @@ export default function Projects() {
                         whileHover={{ y: -1100 }} 
                         transition={{ duration: 5, ease: "easeInOut" }} 
                         style={{ height: 'auto', objectFit: 'cover', cursor: 'pointer', borderRadius: '25px' }}
-                        className="mt-3 md:mt-0 w-[82%] md:w-[100%]"
+                        className="mt-3 md:mt-0 w-[82%] md:w-[100%] mx-auto"
                         />
                     </div>
                     <div className="md:w-[40%] mb-3 md:mb-0">
@@ -65,7 +65,7 @@ export default function Projects() {
                         whileHover={{ y: -1400 }} 
                         transition={{ duration: 5, ease: "easeInOut" }} 
                         style={{ height: 'auto', objectFit: 'cover', cursor: 'pointer', borderRadius: '25px' }}
-                        className="mt-3 md:mt-0 w-[82%] md:w-[100%]"
+                        className="mt-3 md:mt-0 w-[82%] md:w-[100%] mx-auto"
                         />
                     </div>
                     </div>
@@ -79,7 +79,7 @@ export default function Projects() {
                         whileHover={{ y: -3300 }} 
                         transition={{ duration: 2, ease: "easeInOut" }} 
                         style={{ height: 'auto', objectFit: 'cover', cursor: 'pointer', borderRadius: '20px' }}
-                        className="mt-3 md:mt-0 w-[82%] md:w-[100%]"
+                        className="mt-3 md:mt-0 w-[82%] md:w-[100%] mx-auto"
                         />
                     </div>
                         <div className="md:w-[40%] mb-3 md:mb-0">

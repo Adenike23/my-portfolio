@@ -4,6 +4,10 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",],
   theme: {
     extend: {},
+    screens: {
+      md: '900px',
+      lg: '1024px'
+    }
   },
   plugins: [],
 }

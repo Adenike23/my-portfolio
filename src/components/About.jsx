@@ -12,7 +12,7 @@ export default function About() {
                 drag
                 dragConstraints={{right: 0, left: 70, bottom: 40, top: 4}}
                 dragElastic={1}
-                className="bg-slate-400 w-[30px] h-[30px] rounded-full fixed right-0 top-[22rem]"
+                className="bg-slate-400 w-[30px] h-[30px] rounded-full fixed right-0 top-[22rem] z-10"
             >
             </motion.div>
 

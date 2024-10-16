@@ -2,7 +2,7 @@ import { motion } from "framer-motion"
 
 export default function Experience() {
     return (
-        <div className="bg-gray-200 p-[3rem] md:px-[10rem] md:grid grid-cols-2 rounded-3xl">
+        <div className="bg-gray-200 p-[3rem] md:grid grid-cols-2 rounded-3xl">
             <div>
             <h4 className="text-2xl font-medium">Work Experience</h4>
             <motion.div initial={{x: '-100vw'}} animate={{x: 0}} transition={{type: 'spring', stiffness: 100}} className="bg-zinc-200 drop-shadow-lg p-2 my-4">

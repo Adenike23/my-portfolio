@@ -1,8 +1,10 @@
 import { useState } from "react"
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { FaSpinner } from 'react-icons/fa';
 
 export default function Message() {
+    const [isLoading, setIsLoading] = useState(false)
     const [values, setValues] = useState({
         name: '',
         email: '',
@@ -19,6 +21,7 @@ export default function Message() {
 
     const handleSendMail = async (e) => {
         e.preventDefault()
+        setIsLoading(true)
         
         try {
                 const response = await fetch('https://getform.io/f/bxojkoma', {
@@ -46,12 +49,13 @@ export default function Message() {
             }
         } catch (error) {
             console.error('Error sending message.', error);
+            toast.error('Something went wrong. Please try again later.');
         }
-           
+        setIsLoading(false)   
     }
 
     return (
-        <div className="w-[90%] md:w-[30%] mx-auto mt-[5rem] mb-[3rem]">
+        <div className="w-[90%] lg:w-[40%] mx-auto mt-[5rem] mb-[3rem]">
             <ToastContainer position="top-center"/>
             <form onSubmit={handleSendMail}>
                 <div>
@@ -89,7 +93,7 @@ export default function Message() {
                     </textarea>
                 </div>
                 <div className="flex justify-center mt-3">
-                    <button className="rounded-lg bg-black text-white py-2 px-4 mr-3">Send</button>
+                    {isLoading ? <button className="rounded-lg bg-black text-white py-3 px-6 cursor-not-allowed"><FaSpinner className="animate-spin"/></button> : <button className="rounded-lg bg-black text-white py-2 px-4 mr-3">Send</button>}
                 </div>
             </form>
         </div>

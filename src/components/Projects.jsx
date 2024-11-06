@@ -33,7 +33,7 @@ export default function Projects() {
                     </div>
                     </div>
 
-                <div className="flex flex-col-reverse md:flex-row justify-around w-[90%] mx-auto my-[4rem] bg-zinc-300 p-3 rounded-2xl">
+                {/* <div className="flex flex-col-reverse md:flex-row justify-around w-[90%] mx-auto my-[4rem] bg-zinc-300 p-3 rounded-2xl">
                     <div style={{ overflow: 'hidden', height: '300px' }}>
                     <motion.img
                         src={projectUniv} 
@@ -50,7 +50,7 @@ export default function Projects() {
                         <p className="py-2">ProjectUniv allows lecturers to manage course materials, post assignments, and interact with students. Students can view course materials, submit assignments, and track their progress. The project is designed to streamline communication and assignment management between students and lecturers.</p>
                         <button className="rounded-2xl bg-black py-2 px-4 text-white md:mt-[3rem]"><a href="https://github.com/tolopsy/univ-frontend" className="flex items-center gap-1" target="_blank"><FaGithub /> Github</a></button>
                     </div>
-                    </div>
+                    </div> */}
                 <div className="flex gap-2 flex-col md:flex-row justify-around w-[90%] mx-auto my-[4rem] bg-zinc-300 p-3 rounded-2xl">
                     <div className="md:w-[40%] mb-3 md:mb-0">
                         <h2 className="text-2xl font-semibold">DevDose</h2>

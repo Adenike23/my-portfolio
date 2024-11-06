@@ -16,8 +16,7 @@ export default function Experience() {
             <div className="bg-zinc-200 drop-shadow-lg p-2">
                 <h2>Frontend Developer Intern</h2>
                 <small>March 2024 - present</small>
-                <h4 className="pt-3">&diams; Designed and implemented a course management web app using React and
-                TypeScript.</h4>
+                <h4 className="pt-3">&diams; Designed and implemented a course management web app using React.</h4>
                 <h4 className="pt-3">&diams; Worked with a backend developer to integrate multiple APIs while creating and
                 developing a university website for instructors and students.</h4>
             </div>
